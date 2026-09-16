@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsp-metaheuristics"
+version = "0.1.0"
+description = "Caixeiro Viajante com Têmpera Simulada e Algoritmo Genético"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.0", "matplotlib>=3.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["tsp", "viz", "experiments"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
